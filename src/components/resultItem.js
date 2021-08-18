@@ -16,6 +16,7 @@ const ResultItem = ({ name, result, results, setResults, todo, todos, setTodos }
         //     // id: savedItem[1]
         // })
     }
+    
     return(
         <a href="#" className={`todo-item`} onClick={completeHandler}>
             {result.name}, {`id=${result.id}`}
