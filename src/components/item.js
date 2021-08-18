@@ -2,6 +2,8 @@ import React from 'react';
 
 const Item = ({ text, todo, todos, setTodos }) => {
     const deleteHandler = (e) => {
+        // When user clicks on the delete button, remove the selected saved result from the list
+        
         setTodos(todos.filter(el => el.id !== todo.id))
     }
     const completeHandler = (e) => {
